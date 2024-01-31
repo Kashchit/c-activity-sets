@@ -25,6 +25,7 @@ int main()
     return 0;
 }
 
+
 int get_n()
 {
     int n;
