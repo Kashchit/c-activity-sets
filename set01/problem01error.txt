@@ -1,0 +1,9 @@
+Last login: Wed Jan 31 19:27:47 on ttys001
+/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem01 ; exit;
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem01 ; exit;
+kahchit thapa
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+

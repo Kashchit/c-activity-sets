@@ -1,0 +1,26 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air c-activity-sets % cd sets01
+cd: no such file or directory: sets01
+(base) kashchitbikramthapa@Kashchits-MacBook-Air c-activity-sets % cd set01
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set01 % gcc problem03.c -o problem03
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set01 % lldb ./problem03
+(lldb) target create "./problem03"
+Current executable set to '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem03' (arm64).
+(lldb) log enable lldb default -f problem03.log
+(lldb) b
+No breakpoints currently set.
+(lldb) b main
+Breakpoint 1: where = problem03`main, address = 0x0000000100003e48
+(lldb) r
+Process 35513 launched: '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem03' (arm64)
+Process 35513 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003e48 problem03`main
+problem03`main:
+->  0x100003e48 <+0>:  sub    sp, sp, #0x30
+    0x100003e4c <+4>:  stp    x29, x30, [sp, #0x20]
+    0x100003e50 <+8>:  add    x29, sp, #0x20
+    0x100003e54 <+12>: mov    w8, #0x0
+Target 0: (problem03) stopped.
+(lldb) q
+Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set01 % 

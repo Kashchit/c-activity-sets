@@ -1,0 +1,23 @@
+gcc problem01.c -o problem01
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set01 % lldb ./problem01
+(lldb) target create "./problem01"
+Current executable set to '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem01' (arm64).
+(lldb) log enable lldb default -f problem01.log
+(lldb) b main
+Breakpoint 1: where = problem01`main, address = 0x0000000100003f68
+(lldb) r
+Process 34414 launched: '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem01' (arm64)
+Process 34414 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003f68 problem01`main
+problem01`main:
+->  0x100003f68 <+0>:  sub    sp, sp, #0x20
+    0x100003f6c <+4>:  stp    x29, x30, [sp, #0x10]
+    0x100003f70 <+8>:  add    x29, sp, #0x10
+    0x100003f74 <+12>: mov    w8, #0x0
+Target 0: (problem01) stopped.
+(lldb) finish
+error: Could not create return address breakpoint.
+(lldb) q
+Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set01 % 

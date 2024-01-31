@@ -1,0 +1,9 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem07 ; exit;
+Enter the number: 5
+The sum from 1 to 5 is 15
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]

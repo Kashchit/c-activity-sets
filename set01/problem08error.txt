@@ -1,0 +1,13 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem08 ; exit;
+Input array size:4
+ Input the array:2
+ Input the array:3
+ Input the array:4
+ Input the array:5
+The sum is 14.
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]

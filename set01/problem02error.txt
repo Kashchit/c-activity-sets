@@ -1,0 +1,9 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem02 ; exit;
+Enter any number:2
+Enter any number:3
+The sum of 2 and 3 is : 5
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+

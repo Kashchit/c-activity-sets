@@ -1,0 +1,15 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set01/problem11 ; exit;
+Enter the Real part of the number: 2
+Enter the Imaginary part of the number: 5
+Enter the Real part of the number: 6
+Enter the Imaginary part of the number: 4
+C1 is 2.000000 + i5.000000
+C2 is 6.000000 + i4.000000
+The sum of the two complex No's is: 8.000000 + i9.000000
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
