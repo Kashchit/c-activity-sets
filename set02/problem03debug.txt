@@ -1,0 +1,20 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % gcc problem03.c -o problem03
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % lldb ./problem03
+(lldb) target create "./problem03"
+Current executable set to '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem03' (arm64).
+(lldb) b main
+Breakpoint 1: where = problem03`main, address = 0x0000000100003db8
+(lldb) r
+Process 45024 launched: '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem03' (arm64)
+Process 45024 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003db8 problem03`main
+problem03`main:
+->  0x100003db8 <+0>:  sub    sp, sp, #0x20
+    0x100003dbc <+4>:  stp    x29, x30, [sp, #0x10]
+    0x100003dc0 <+8>:  add    x29, sp, #0x10
+    0x100003dc4 <+12>: mov    w8, #0x0
+Target 0: (problem03) stopped.
+(lldb) q
+Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % 

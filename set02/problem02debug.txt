@@ -1,0 +1,24 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % gcc problem02.c -o problem02
+problem02.c:28:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+1 warning generated.
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % lldb ./problem02
+(lldb) target create "./problem02"
+Current executable set to '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem02' (arm64).
+(lldb) b main
+Breakpoint 1: where = problem02`main, address = 0x0000000100003e34
+(lldb) r
+Process 44086 launched: '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem02' (arm64)
+Process 44086 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003e34 problem02`main
+problem02`main:
+->  0x100003e34 <+0>:  sub    sp, sp, #0x30
+    0x100003e38 <+4>:  stp    x29, x30, [sp, #0x20]
+    0x100003e3c <+8>:  add    x29, sp, #0x20
+    0x100003e40 <+12>: mov    w8, #0x0
+Target 0: (problem02) stopped.
+(lldb) q
+Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % 

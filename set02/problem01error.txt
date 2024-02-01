@@ -1,0 +1,10 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem01 ; exit;
+Enter the base of the triangle: 12
+Enter the height of the triangle: 4
+The area of triange is 24.00
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
