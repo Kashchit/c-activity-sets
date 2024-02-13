@@ -9,6 +9,7 @@ int main() {
     output(n, result);
     return 0;
 }
+
 int input_number() {
     int n;
     printf("Enter a number: ");
