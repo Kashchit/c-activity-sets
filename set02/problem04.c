@@ -41,6 +41,7 @@ int is_composite(int num) {
     return 0; 
 }
 
+
 int sum_composite_numbers(int n, int a[n]) {
     int sum = 0;
 
