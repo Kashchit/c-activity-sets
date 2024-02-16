@@ -12,6 +12,7 @@ int main(){
     output(a,b,c,largest);
     return 0;
 }
+
 int input(){
     int x;
     printf("Enter the number:");
