@@ -14,6 +14,7 @@ int main()
     output(string1,string2,result);
     return 0;
 }
+
 void input_two_strings(char *string1, char *string2 )
 {
     printf("Enter the string : \n");
