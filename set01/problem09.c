@@ -11,6 +11,8 @@ int main()
     sqrroot = square_root(n);
     output(n,sqrroot);
 }
+
+
 float input()
 {
     float n;
