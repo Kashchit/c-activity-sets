@@ -35,6 +35,7 @@ Complex add_complex(Complex C1, Complex C2)
     Sum.img= C1.img + C2.img;
     return Sum;
 }
+
 void output(Complex C1,Complex C2,Complex Sum)
 {
     printf("C1 is %f + i%f\n",C1.real,C1.img);
