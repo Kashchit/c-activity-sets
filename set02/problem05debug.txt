@@ -1,0 +1,33 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % gcc problem05.c -o problem05
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % lldb ./problem05
+(lldb) target create "./problem05"
+Current executable set to '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem05' (arm64).
+(lldb) b main
+Breakpoint 1: where = problem05`main, address = 0x0000000100003e08
+(lldb) r
+Process 31691 launched: '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem05' (arm64)
+Process 31691 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003e08 problem05`main
+problem05`main:
+->  0x100003e08 <+0>:  sub    sp, sp, #0x30
+    0x100003e0c <+4>:  stp    x29, x30, [sp, #0x20]
+    0x100003e10 <+8>:  add    x29, sp, #0x20
+    0x100003e14 <+12>: mov    w8, #0x0
+Target 0: (problem05) stopped.
+(lldb) q
+Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % git add .
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % git commit-m "test"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % git push
+Everything up-to-date
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % 
