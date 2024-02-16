@@ -14,6 +14,7 @@ void output(int n, Complex c[n], Complex result);
 
 int main()
 
+
 {
     int n = get_n();
     Complex complex_no[n];
