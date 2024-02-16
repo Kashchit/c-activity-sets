@@ -14,15 +14,15 @@ int main(){
 }
 int input(){
     int x;
-    printf("Enter the number :");
+    printf("Enter the number:");
     scanf("%d",&x);
     return x;
 }
-int compare(int a, int b, int c){
-    if(a>b && a>c){
+int compare(int a,int b ,int c){
+    if(a>=b && a>=c){
         return a;
     }
-    else if(b>a && b>c){
+    else if(b>=a && b>=c){
         return b;
     }
     else{
@@ -30,6 +30,8 @@ int compare(int a, int b, int c){
     }
 }
 void output(int a, int b, int c, int largest){
-    printf("Largest between %d , %d and %d is : %d",a,b,c,largest);
+    printf("the largest number is %d",largest);
 }
+
+
 
