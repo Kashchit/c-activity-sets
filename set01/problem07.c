@@ -10,6 +10,7 @@ int main(){
     output(n,sum);
     return 0;
 }
+
 int input_n(){
     int x;
     printf("Enter the number: ");
