@@ -1,0 +1,26 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air c-activity-sets % gcc problem06.c -o problem06
+clang: error: no such file or directory: 'problem06.c'
+clang: error: no input files
+(base) kashchitbikramthapa@Kashchits-MacBook-Air c-activity-sets % cd set02
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % gcc problem06.c -o problem06
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % lldc ./problem06
+zsh: command not found: lldc
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % lldb ./problem06
+(lldb) target create "./problem06"
+Current executable set to '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem06' (arm64).
+(lldb) b main
+Breakpoint 1: where = problem06`main, address = 0x0000000100003d58
+(lldb) r
+Process 39521 launched: '/Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set02/problem06' (arm64)
+Process 39521 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+    frame #0: 0x0000000100003d58 problem06`main
+problem06`main:
+->  0x100003d58 <+0>:  sub    sp, sp, #0x110
+    0x100003d5c <+4>:  stp    x28, x27, [sp, #0xf0]
+    0x100003d60 <+8>:  stp    x29, x30, [sp, #0x100]
+    0x100003d64 <+12>: add    x29, sp, #0x100
+Target 0: (problem06) stopped.
+(lldb) q
+Quitting LLDB will kill one or more processes. Do you really want to proceed: [Y/n] y
+(base) kashchitbikramthapa@Kashchits-MacBook-Air set02 % 
