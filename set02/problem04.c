@@ -2,7 +2,7 @@
 #include <stdio.h>
 int input_array_size();
 void input_array(int n, int a[n]);
-int sum_composite_numbers(int n, int a[n]);
+int sum_c(int n, int a[n]);
 void output(int sum);
 int main() {
     int size = input_array_size();
@@ -10,7 +10,7 @@ int main() {
     printf("Enter the array elements:\n");
     input_array(size, array);
 
-    int sum = sum_composite_numbers(size, array);
+    int sum = sum_c(size, array);
 
     output(sum);
 
@@ -42,7 +42,7 @@ int is_composite(int num) {
 }
 
 
-int sum_composite_numbers(int n, int a[n]) {
+int sum_c(int n, int a[n]) {
     int sum = 0;
 
     for (int i = 0; i < n; i++) {
