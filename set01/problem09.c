@@ -22,10 +22,13 @@ float input()
 }
 float square_root(float n)
 {
-    float i;
-
-    for(i=1.414 ; i*i<n ; i+=0.000001);    
-    return i;
+    float x=n, y=1,epsilion = 0.0000001;
+    while(x-y>epsilion)
+     {
+        x = (x+y)/2;
+        y = n/x;
+    }
+    return x;
 }
 void output(float n, float sqrroot){
     printf("the square root of %f is %f",n,sqrroot);
