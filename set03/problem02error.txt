@@ -1,0 +1,18 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set03/problem02 ; exit;
+Enter the point x1 and y1: 
+1
+2
+Enter the point x2 and y2: 
+3
+4
+Enter the point x3 and y3: 
+5
+6
+The points (1.000000, 2.000000), (3.000000, 4.000000) and (5.000000, 6.000000) does not form a triangle 
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
