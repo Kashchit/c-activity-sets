@@ -1,60 +1,44 @@
-//10. Write a C program to compare two strings, character by character.//
 #include <stdio.h>
+
 void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
-void output(char *string1, char *string2, int result);
+void output(char *string1, char *string2,int result);
 
 int main()
 {
-    int result;
-    char string1[100];
-    char string2[100];
-    input_two_strings(string1,string2);
-    result=stringcompare(string1,string2);
-    output(string1,string2,result);
+    char str1[100], str2[100];
+    input_two_strings(str1, str2);
+    int result = stringcompare(str1, str2);
+    output(str1, str2, result);
     return 0;
 }
 
-void input_two_strings(char *string1, char *string2 )
+void input_two_strings(char *str1, char *str2)
 {
-    printf("Enter the string : \n");
-    scanf("%s",string1);
-    printf("Enter the string : \n");
-    scanf("%s",string2);
+    printf("Enter the first string: ");
+    scanf("%s", str1);
+    printf("Enter the second string: ");
+    scanf("%s", str2);
 }
-int stringcompare(char *string1, char *string2)
+
+int stringcompare(char *str1, char *str2)
 {
-    int i=0;
-    for(int i=0;string1[i]!='\0' || string2[i]!='\0';i++)
+    int i,result=0;
+    for(i=0;str1[i]!='\0' && str2[i]!='\0' && str1[i]==str2[i];i++)
     {
-        if(string1[i]<string2[i])
-        {
-            return 0;
-            i++;
-        }
-        else if(string1[i]>string2[i])
-        {
-            return 1;
-            i++;
-        }
+        continue;
     }
-    if(i==0)
-    {
-        return 2;
-    }
+    result =str1[i] - str2[i];
+    return result;
 }
-void output(char *string1, char *string2, int result)
+
+void output(char *str1, char *str2, int result)
 {
-    if(result==0)
-    {
-        printf("%s is greater",string1);
-    }
-    else if(result==1)
-    {
-        printf("%s is greater",string2);
-    }
-    else
-    {
-        printf("Both string are same");
+    if (result <= -1) {
+        printf("%s is less than %s\n", str1, str2);
+    } else if (result >= 1) {
+        printf("%s is greater than %s\n", str1, str2);
+    } else if (result == 0){
+        printf("%s is equal to %s\n", str1, str2);
     }
 }
