@@ -16,6 +16,8 @@ Triangle find_smallest_triangle(int n, Triangle t[n]);
 void output(Triangle smallest);
 
 int main() 
+
+
 {
     int n = input_n();
     Triangle tri[n];
