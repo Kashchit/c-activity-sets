@@ -5,24 +5,20 @@
 int input_number();
 int is_prime(int n);
 void output(int n, int result);
-
-int main()
-{
+int main(){
     int n,result;
     n=input_number();
     result=is_prime(n);
     output(n,result);
     return 0;
 }
-int input_number()
-{
+int input_number(){
     int x;
     printf("Enter the number :\n");
     scanf("%d",&x);
     return x;
 }
-int is_prime(int n)
-{
+int is_prime(int n){
     int result=0;
     for(int i=1;i<=n;i++)
     {
@@ -37,8 +33,7 @@ int is_prime(int n)
     }
     return result;
 }
-void output(int n, int result)
-{
+void output(int n, int result){
     if(result==2)
     {
         printf("The number %d is a prime number \n",n);
