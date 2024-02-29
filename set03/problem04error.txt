@@ -1,0 +1,9 @@
+(base) kashchitbikramthapa@Kashchits-MacBook-Air ~ % /Users/kashchitbikramthapa/Desktop/c-activity-sets/c-activity-sets/set03/problem04 ; exit;
+Enter the number : 5
+fibonacci(5) = 5
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
