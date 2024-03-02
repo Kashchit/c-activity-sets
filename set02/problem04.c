@@ -9,11 +9,8 @@ int main() {
     int array[size];
     printf("Enter the array elements:\n");
     input_array(size, array);
-
     int sum = sum_c(size, array);
-
     output(sum);
-
     return 0;
 }
 
