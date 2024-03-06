@@ -29,7 +29,6 @@ int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3){
     d1=sqrt(pow(x2-x1,2)+pow(y2-y1,2));//length of side 1
     d2=sqrt(pow(x3-x1,2)+pow(y3-y1,2));//length of side 2
     d3=sqrt(pow(x3-x2,2)+pow(y3-y2,2));//length of side 3
-
     if(d1+d2>d3 && d2+d3>d1 && d1+d3>d2)//In a triangle the sum of two sides is greater than the third
     {
         result=1;
