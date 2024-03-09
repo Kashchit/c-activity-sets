@@ -19,15 +19,13 @@ int input(){
 }
 int find_fibo(int n){
     int a[n];
-    for(int i=2;i<=n;i++)
-    {
+    for(int i=2;i<=n;i++){
         a[0]=0,a[1]=1;
         
         a[i]=a[i-1]+a[i-2];
     }
     return a[n];
 }
-void output(int n, int fibo)
-{
+void output(int n, int fibo){
     printf("fibonacci(%d) = %d",n,fibo);
 }
